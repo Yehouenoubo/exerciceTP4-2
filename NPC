@@ -1,0 +1,32 @@
+# Créé par Bénito Ornel Yehouenou
+# Créé par le 16 Janvuer 2022
+# Exercice NPC
+
+import random
+
+class NPC:
+
+    def __init__(self):
+        self.force = lancer_de()
+        self.agilite = lancer_de()
+        self.constitution = lancer_de()
+        self.intelligence = lancer_de()
+        self.sagesse = lancer_de()
+        self.charisme= lancer_de()
+        self.classe_armure = random.randint(1, 12)
+        self.nom = str(input('Entrez un nom:'))
+        self.race = str(input('Entrez un nom:'))
+        self.espece = str(input('Entrez un nom:'))
+        self.point_de_vie = random.randint(1,20)
+        self.profession = str(input('Entrez un nom:'))
+
+print(self.race, self.espece, self.nom, self.force, self.point_de_vie, self.agilite, self.charisme, self.classe_armure, self.constitution, self.intelligence, self.profession, self.sagesse)
+
+
+
+def lancer_de():
+    de_1 = random.randint(1,6)
+    de_2 = random.randint(1,6)
+    liste = [de_1, de_2]
+    liste.sort()
+    return liste[1]+liste[2]+liste[3]
