@@ -41,7 +41,6 @@ def lancer_de():
 class Kobold(NPC):
     def __init__(self):
         super().__init__()
-        self.id = 0
     def attaque(self, NPC):
         return
     def subir_dommage(self, dommage):
@@ -52,7 +51,6 @@ class Kobold(NPC):
 class Hero(NPC):
     def __init__(self):
         super().__init__()
-        self.id = 0
     def attaque(self, NPC):
         return
     def subir_dammage(self, dommage):
